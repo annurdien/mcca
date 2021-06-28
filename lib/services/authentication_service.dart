@@ -10,7 +10,7 @@ class AuthenticationService {
   final _logger = Logger();
   final _localStorageService = locator<LocalStorageService>();
 
-  AppUser? _user = null;
+  AppUser? _user;
   AppUser? get user => _user;
   bool get hasUser => _user != null;
 

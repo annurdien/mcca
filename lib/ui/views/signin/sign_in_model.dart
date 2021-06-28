@@ -60,6 +60,6 @@ class SignInViewModel extends FormViewModel {
   }
 
   void toSignUpScreen() {
-    _navigationService.replaceWith(Routes.signInView);
+    _navigationService.replaceWith(Routes.signUpView);
   }
 }
