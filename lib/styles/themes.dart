@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'constants.dart';
 
-final _fontFamily = GoogleFonts.montserrat().fontFamily;
+final _fontFamily = GoogleFonts.poppins().fontFamily;
 
 List<ThemeData> themes = [
   ThemeData(

@@ -31,7 +31,7 @@ class SignUpViewModel extends FormViewModel {
           name: nameValue ?? '',
         ),
       );
-
+      
       if (user == null) {
         setError('Semua form harus diisi');
         _snackbarService.showSnackbar(

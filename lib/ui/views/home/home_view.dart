@@ -1,11 +1,13 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:lexiedu_app/ui/views/home/home_view_model.dart';
+import 'package:lexiedu_app/ui/views/homepage/homepage_view.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
   @override
   Widget builder(BuildContext context, HomeViewModel viewModel, Widget? child) {
+    final _height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: getViewForIndex(viewModel.currentIndex),
       bottomNavigationBar: CurvedNavigationBar(
@@ -17,6 +19,8 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
           Icon(Icons.settings, size: 30),
         ],
         onTap: viewModel.setIndex,
+        backgroundColor: Colors.green,
+        height: _height * 0.067,
       ),
     );
   }
@@ -29,9 +33,7 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
   Widget getViewForIndex(int index) {
     switch (index) {
       case 0:
-        return Scaffold(
-          body: Center(child: Text('Home Menu')),
-        );
+        return HomePageView();
       case 1:
         return Scaffold(
           body: Center(child: Text('Game Menu')),

@@ -1,6 +1,7 @@
 import 'package:lexiedu_app/services/authentication_service.dart';
 import 'package:lexiedu_app/services/local_storage_service.dart';
 import 'package:lexiedu_app/ui/views/home/home_view.dart';
+import 'package:lexiedu_app/ui/views/homepage/homepage_view.dart';
 import 'package:lexiedu_app/ui/views/signin/sign_in_view.dart';
 import 'package:lexiedu_app/ui/views/signup/sign_up_view.dart';
 import 'package:lexiedu_app/ui/views/startup/start_up_view.dart';
@@ -14,6 +15,7 @@ import 'package:stacked_services/stacked_services.dart';
     MaterialRoute(page: HomeView),
     MaterialRoute(page: SignInView),
     MaterialRoute(page: SignUpView),
+    MaterialRoute(page: HomePageView)
   ],
   dependencies: [
     LazySingleton(classType: LocalStorageService),
