@@ -7,7 +7,7 @@ final _fontFamily = GoogleFonts.poppins().fontFamily;
 
 List<ThemeData> themes = [
   ThemeData(
-    primaryColor: Color(0xFF3F6D97),
+    primaryColor: Color(0xFF107F53),
     fontFamily: _fontFamily,
     brightness: Brightness.light,
     buttonTheme: ButtonThemeData(

@@ -60,6 +60,7 @@ class SignInView extends ViewModelBuilderWidget<SignInViewModel>
                     onPressed: () {
                       viewModel.signIn();
                     },
+            
                   ),
                   SizedBox(height: 5),
                   AppErrorText(text: viewModel.modelError),

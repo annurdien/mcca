@@ -9,7 +9,7 @@ class LexieduLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 150,
-      width: 150,
+      width: 200,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
         image: DecorationImage(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class KonsultasiCard extends StatelessWidget {
   const KonsultasiCard({Key? key, required this.width}) : super(key: key);
@@ -21,7 +20,7 @@ class KonsultasiCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.fromLTRB(20, 8, 0, 0),
+              padding: EdgeInsets.fromLTRB(20, 5, 0, 0),
               height: 85,
               alignment: Alignment.topCenter,
               width: 100,
@@ -55,16 +54,55 @@ class KonsultasiCard extends StatelessWidget {
             ),
             Container(
               height: 85,
-              padding: EdgeInsets.fromLTRB(10, 2, 10, 2),
+              padding: EdgeInsets.fromLTRB(10, 5, 10, 2),
               child: Container(
                 alignment: Alignment.centerLeft,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('dr. Ryan'),
-                    Text('Ahli Kesehatan'),
-                    Text('Minggu Jam 09.00'),
+                    Text(
+                      'Dr. Ryan',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    ),
+                    Text(
+                      'Doctor Ahli',
+                      style: TextStyle(
+                        color: Color(0xFFC4C4C4),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      'Minggu Jam 09.00',
+                      style: TextStyle(fontSize: 13),
+                    ),
                   ],
                 ),
+              ),
+            ),
+            Container(
+              alignment: Alignment.centerRight,
+              padding: EdgeInsets.only(left: 20),
+              height: 85,
+              child: Row(
+                children: [
+                  Text(
+                    'Ngobrol',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF107F53),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 5),
+                    child: Icon(
+                      Icons.arrow_forward,
+                      color: Color(0xFF107F53),
+                    ),
+                  )
+                ],
               ),
             )
           ],

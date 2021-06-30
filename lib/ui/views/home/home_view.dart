@@ -15,7 +15,7 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
         onPressed: () {},
         child: Icon(
           Icons.camera,
-          size: 40,
+          size: 26,
         ),
         backgroundColor: Color(0xFF409D78),
       ),
@@ -23,17 +23,18 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
       bottomNavigationBar: AnimatedBottomNavigationBar(
         onTap: viewModel.setIndex,
         icons: [
-          Icons.home,
-          Icons.videogame_asset,
+          Icons.home_outlined,
+          Icons.videogame_asset_outlined,
           Icons.chat_bubble_outline,
-          Icons.settings
+          Icons.settings_outlined
         ],
         activeIndex: viewModel.currentIndex,
         gapLocation: GapLocation.center,
-        notchSmoothness: NotchSmoothness.verySmoothEdge,
+        notchSmoothness: NotchSmoothness.defaultEdge,
         leftCornerRadius: 0,
         rightCornerRadius: 0,
         height: _height * 0.060,
+        activeColor: Color(0xFF409D78),
       ),
     );
   }
