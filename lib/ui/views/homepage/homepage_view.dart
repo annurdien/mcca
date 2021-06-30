@@ -97,7 +97,7 @@ class HomePageView extends ViewModelBuilderWidget<HomePageViewModel> {
                 width: _width * 0.90,
               ),
               SizedBox(
-                height: 20,
+                height: 30,
               )
             ],
           ),

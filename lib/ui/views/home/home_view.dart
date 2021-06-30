@@ -1,4 +1,5 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+//import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:lexiedu_app/ui/views/home/home_view_model.dart';
 import 'package:lexiedu_app/ui/views/homepage/homepage_view.dart';
@@ -10,17 +11,29 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
     final _height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: getViewForIndex(viewModel.currentIndex),
-      bottomNavigationBar: CurvedNavigationBar(
-        items: [
-          Icon(Icons.home, size: 30),
-          Icon(Icons.videogame_asset, size: 30),
-          Icon(Icons.camera, size: 30),
-          Icon(Icons.chat_bubble_outline, size: 30),
-          Icon(Icons.settings, size: 30),
-        ],
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          Icons.camera,
+          size: 40,
+        ),
+        backgroundColor: Color(0xFF409D78),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: AnimatedBottomNavigationBar(
         onTap: viewModel.setIndex,
-        backgroundColor: Colors.green,
-        height: _height * 0.067,
+        icons: [
+          Icons.home,
+          Icons.videogame_asset,
+          Icons.chat_bubble_outline,
+          Icons.settings
+        ],
+        activeIndex: viewModel.currentIndex,
+        gapLocation: GapLocation.center,
+        notchSmoothness: NotchSmoothness.verySmoothEdge,
+        leftCornerRadius: 0,
+        rightCornerRadius: 0,
+        height: _height * 0.060,
       ),
     );
   }
@@ -40,13 +53,9 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
         );
       case 2:
         return Scaffold(
-          body: Center(child: Text('Camera Menu')),
-        );
-      case 3:
-        return Scaffold(
           body: Center(child: Text('Chat Menu')),
         );
-      case 4:
+      case 3:
         return Scaffold(
           body: Center(child: Text('Settings Menu')),
         );
