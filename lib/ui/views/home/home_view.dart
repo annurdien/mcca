@@ -1,8 +1,11 @@
 //import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:lexiedu_app/ui/views/home/home_view_model.dart';
-import 'package:lexiedu_app/ui/views/homepage/homepage_view.dart';
+import 'package:lexiedu/ui/views/chat/chat_view.dart';
+import 'package:lexiedu/ui/views/game/game_view.dart';
+import 'package:lexiedu/ui/views/home/home_view_model.dart';
+import 'package:lexiedu/ui/views/homepage/homepage_view.dart';
+import 'package:lexiedu/ui/views/settings/settings_view.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
@@ -12,11 +15,15 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
     return Scaffold(
       body: getViewForIndex(viewModel.currentIndex),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(
-          Icons.camera,
-          size: 26,
-        ),
+        onPressed: viewModel.recogniseImage,
+        child: viewModel.isBusy
+            ? CircularProgressIndicator(
+                color: Colors.white,
+              )
+            : Icon(
+                Icons.camera,
+                size: 26,
+              ),
         backgroundColor: Color(0xFF409D78),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -49,17 +56,11 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
       case 0:
         return HomePageView();
       case 1:
-        return Scaffold(
-          body: Center(child: Text('Game Menu')),
-        );
+        return GameView();
       case 2:
-        return Scaffold(
-          body: Center(child: Text('Chat Menu')),
-        );
+        return ChatView();
       case 3:
-        return Scaffold(
-          body: Center(child: Text('Settings Menu')),
-        );
+        return SettingView();
     }
     return Scaffold(
       body: Text('No Such Route'),

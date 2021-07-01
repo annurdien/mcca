@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lexiedu_app/ui/views/homepage/homepage_model.dart';
-import 'package:lexiedu_app/ui/widgets/konsultasi_card.dart';
-import 'package:lexiedu_app/ui/widgets/main_progress_indicator.dart';
-import 'package:lexiedu_app/ui/widgets/profile_bar.dart';
-import 'package:lexiedu_app/ui/widgets/quiz_harian_bar.dart';
+import 'package:lexiedu/ui/views/homepage/homepage_model.dart';
+import 'package:lexiedu/ui/widgets/konsultasi_card.dart';
+import 'package:lexiedu/ui/widgets/main_progress_indicator.dart';
+import 'package:lexiedu/ui/widgets/profile_bar.dart';
+import 'package:lexiedu/ui/widgets/quiz_harian_bar.dart';
 import 'package:stacked/stacked.dart';
 
 class HomePageView extends ViewModelBuilderWidget<HomePageViewModel> {

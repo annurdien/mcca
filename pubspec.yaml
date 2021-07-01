@@ -1,4 +1,4 @@
-name: lexiedu_app
+name: lexiedu
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -37,13 +37,13 @@ dependencies:
   freezed_annotation:
   json_serializable:
   json_annotation:
-  url_launcher: ^6.0.3
   shared_preferences: ^2.0.5
-  flutter_dotenv: ^4.0.0-nullsafety.0
   curved_navigation_bar: ^1.0.1
   user_profile_avatar: ^0.1.0
   percent_indicator: ^3.0.1
   animated_bottom_navigation_bar: ^0.3.2
+  images_picker: ^1.2.4
+  google_ml_kit: ^0.6.0
 
 dev_dependencies:
   flutter_test:
@@ -59,13 +59,17 @@ flutter:
   assets:
     - assets/logo.png
     - assets/membaca.png
+    - assets/membaca2.png
+    - assets/mengeja.png
+    - assets/mengucap.png
 
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+  fonts:
+    - family: OpenDyslexic
+      fonts:
+        - asset: assets/fonts/openDyslexic/OpenDyslexic-Regular.otf
+        - asset: assets/fonts/openDyslexic/OpenDyslexic-Bold.otf
+          weight: 700
+  
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

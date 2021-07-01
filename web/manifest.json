@@ -1,6 +1,6 @@
 {
-    "name": "lexiedu_app",
-    "short_name": "lexiedu_app",
+    "name": "lexiedu",
+    "short_name": "lexiedu",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

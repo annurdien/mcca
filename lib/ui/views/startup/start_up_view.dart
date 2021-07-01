@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lexiedu_app/ui/views/startup/start_up_model.dart';
+import 'package:lexiedu/ui/views/startup/start_up_model.dart';
 import 'package:stacked/stacked.dart';
 
 class StartupView extends ViewModelBuilderWidget<StartupViewModel> {

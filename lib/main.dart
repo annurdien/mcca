@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lexiedu_app/app/app.router.dart';
-import 'package:lexiedu_app/app/app.locator.dart';
-import 'package:lexiedu_app/styles/themes.dart';
+import 'package:lexiedu/app/app.router.dart';
+import 'package:lexiedu/app/app.locator.dart';
+import 'package:lexiedu/styles/themes.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:stacked_themes/stacked_themes.dart';
 

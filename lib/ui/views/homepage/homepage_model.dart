@@ -1,5 +1,5 @@
-import 'package:lexiedu_app/app/app.locator.dart';
-import 'package:lexiedu_app/services/authentication_service.dart';
+import 'package:lexiedu/app/app.locator.dart';
+import 'package:lexiedu/services/authentication_service.dart';
 import 'package:stacked/stacked.dart';
 
 class HomePageViewModel extends BaseViewModel {

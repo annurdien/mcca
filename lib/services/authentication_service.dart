@@ -1,7 +1,7 @@
-import 'package:lexiedu_app/app/app.locator.dart';
-import 'package:lexiedu_app/app/supabase_api.dart';
-import 'package:lexiedu_app/models/application_model.dart';
-import 'package:lexiedu_app/services/local_storage_service.dart';
+import 'package:lexiedu/app/app.locator.dart';
+import 'package:lexiedu/app/supabase_api.dart';
+import 'package:lexiedu/models/application_model.dart';
+import 'package:lexiedu/services/local_storage_service.dart';
 import 'package:logger/logger.dart';
 import 'package:postgrest/postgrest.dart';
 import 'package:supabase/supabase.dart';

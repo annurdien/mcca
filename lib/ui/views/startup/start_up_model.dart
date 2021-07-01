@@ -1,7 +1,7 @@
-import 'package:lexiedu_app/app/app.locator.dart';
-import 'package:lexiedu_app/services/authentication_service.dart';
-import 'package:lexiedu_app/ui/views/home/home_view.dart';
-import 'package:lexiedu_app/ui/views/signin/sign_in_view.dart';
+import 'package:lexiedu/app/app.locator.dart';
+import 'package:lexiedu/services/authentication_service.dart';
+import 'package:lexiedu/ui/views/home/home_view.dart';
+import 'package:lexiedu/ui/views/signin/sign_in_view.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 

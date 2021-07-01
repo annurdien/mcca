@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:lexiedu_app/ui/views/signin/sign_in_model.dart';
-import 'package:lexiedu_app/ui/views/signin/sign_in_view.form.dart';
-import 'package:lexiedu_app/ui/widgets/app_button.dart';
-import 'package:lexiedu_app/ui/widgets/app_error_text.dart';
-import 'package:lexiedu_app/ui/widgets/app_text_button.dart';
-import 'package:lexiedu_app/ui/widgets/app_text_form_field.dart';
-import 'package:lexiedu_app/ui/widgets/lexiedu_logo.dart';
+import 'package:lexiedu/ui/views/signin/sign_in_model.dart';
+import 'package:lexiedu/ui/views/signin/sign_in_view.form.dart';
+import 'package:lexiedu/ui/widgets/app_button.dart';
+import 'package:lexiedu/ui/widgets/app_error_text.dart';
+import 'package:lexiedu/ui/widgets/app_text_button.dart';
+import 'package:lexiedu/ui/widgets/app_text_form_field.dart';
+import 'package:lexiedu/ui/widgets/lexiedu_logo.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked/stacked.dart';
 
@@ -60,7 +60,6 @@ class SignInView extends ViewModelBuilderWidget<SignInViewModel>
                     onPressed: () {
                       viewModel.signIn();
                     },
-            
                   ),
                   SizedBox(height: 5),
                   AppErrorText(text: viewModel.modelError),

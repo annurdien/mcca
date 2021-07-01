@@ -1,7 +1,7 @@
-import 'package:lexiedu_app/app/app.locator.dart';
-import 'package:lexiedu_app/app/app.router.dart';
-import 'package:lexiedu_app/models/application_model.dart';
-import 'package:lexiedu_app/services/authentication_service.dart';
+import 'package:lexiedu/app/app.locator.dart';
+import 'package:lexiedu/app/app.router.dart';
+import 'package:lexiedu/models/application_model.dart';
+import 'package:lexiedu/services/authentication_service.dart';
 import 'package:logger/logger.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
@@ -31,7 +31,7 @@ class SignUpViewModel extends FormViewModel {
           name: nameValue ?? '',
         ),
       );
-      
+
       if (user == null) {
         setError('Semua form harus diisi');
         _snackbarService.showSnackbar(

@@ -1,4 +1,4 @@
-package com.example.lexiedu_app
+package com.example.lexiedu
 
 import io.flutter.embedding.android.FlutterActivity
 

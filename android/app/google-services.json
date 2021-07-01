@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "348455346141",
+    "project_id": "lexiedu-mcca",
+    "storage_bucket": "lexiedu-mcca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348455346141:android:a1fc5bcfcd046a9ce36034",
+        "android_client_info": {
+          "package_name": "com.example.flutterfirebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348455346141-9ku4j96u912oajgqg62b98cou9g9kaok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutterfirebaselogin",
+            "certificate_hash": "e357fd19b29b3d3907f6dcf342952bac677aabe4"
+          }
+        },
+        {
+          "client_id": "348455346141-l2un3eu852ldk6tdblendrmb16kfeeg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB9p5tkWbFZq-r6n6wTvqGSnvTws-YfOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348455346141-l2un3eu852ldk6tdblendrmb16kfeeg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348455346141:android:52f19f36ada7c396e36034",
+        "android_client_info": {
+          "package_name": "com.example.lexiedu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348455346141-l2un3eu852ldk6tdblendrmb16kfeeg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB9p5tkWbFZq-r6n6wTvqGSnvTws-YfOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348455346141-l2un3eu852ldk6tdblendrmb16kfeeg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,4 @@
-# lexiedu_app
+# lexiedu
 
 A new Flutter project.
 
